@@ -1,9 +1,9 @@
 {
-	"name": "Unit Testing with Mockito",
-	"sections": [
-		{
-			"section": "introduction"
-		}
-	],
-	"highlight": "idea"
+  "name": "Unit Testing with Mockito",
+  "sections": [
+    {
+      "section": "introduction"
+    }
+  ],
+  "highlight": "idea"
 }

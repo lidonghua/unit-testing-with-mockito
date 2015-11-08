@@ -1,12 +1,12 @@
 body {
-	font-family: "SF Compact Display", "Helvetica Neue", Helvetica, sans-serif;
-	font-size: 24px;
+  font-family: "SF Compact Display", "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 24px;
 }
 code {
-	font-family: "Source Code Pro", Monaco, monospace;
-	font-size: 28px;
+  font-family: "Source Code Pro", Monaco, monospace;
+  font-size: 28px;
 }
 em {
-	font-style: normal;
-	color: #bc002d;
+  font-style: normal;
+  color: #bc002d;
 }
