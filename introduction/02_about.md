@@ -1,5 +1,5 @@
-!SLIDE
-# About ME
+!SLIDE code
+# $ whoami
 
 !SLIDE
 # *donghua.li*
