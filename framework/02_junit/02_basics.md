@@ -13,14 +13,36 @@
 !SLIDE
 ## Test
 	@@@ Java
-	import static org.junit.Assert.assertEquals;
 	import org.junit.Test;
 
 	public class CalculatorTest {
 	  @Test
 	  public void evaluatesExpression() {
-	    Calculator calculator = new Calculator();
-	    int sum = calculator.evaluate("1+2+3");
-	    assertEquals(6, sum);
+	    // Test goes here
 	  }
+
+	  @Test public void anotherTest() {}
+	}
+
+!SLIDE
+### Test Structure
+# 3A
+
+!SLIDE
+# Arrange
+# Act
+# Assert
+
+!SLIDE
+	@@@ Java
+	import static org.junit.Assert.assertEquals;
+
+	@Test
+	public void evaluatesExpression() {
+	  // Arrange
+	  Calculator calculator = new Calculator();
+	  // Act
+	  int sum = calculator.evaluate("1+2+3");
+	  // Assert
+	  assertEquals(6, sum);
 	}

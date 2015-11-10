@@ -1,5 +1,6 @@
 !SLIDE
 ![JUnit Logo](junit-logo.png)
+# JUnit 4
 
 !SLIDE
 ## A *simple* framework
