@@ -5,8 +5,19 @@ body {
 code {
   font-family: "Source Code Pro", Monaco, monospace;
   font-size: 28px;
+  line-height: 40px;
+}
+pre {
+  margin: 40px;
 }
 em {
   font-style: normal;
   color: #bc002d;
+}
+a {
+  text-decoration: none;
+  color: #48929b;
+}
+a:hover {
+  text-decoration: underline;
 }

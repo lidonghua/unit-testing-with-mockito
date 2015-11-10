@@ -1,9 +1,8 @@
 {
   "name": "Unit Testing with Mockito",
   "sections": [
-    {
-      "section": "introduction"
-    }
+    { "section": "introduction" },
+    { "section": "framework" }
   ],
   "highlight": "idea"
 }
