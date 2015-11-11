@@ -1,4 +1,7 @@
 !SLIDE
+# Assertions
+
+!SLIDE
 ## <del>Assert.assertEquals</del>
 	@@@ Java
 	// ALWAYS use static import
