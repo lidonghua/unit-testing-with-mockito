@@ -53,13 +53,49 @@
 
 !SLIDE
 	@@@ Java
-	assertThat(Matcher matcher)
+	// Note: expected and actual are reversed
+	assertThat(T actual, Matcher expected)
 
 !SLIDE
 # Matcher
 
 !SLIDE
+	@@@ Java
+	import static org.junit.matchers.JUnitMatchers.*;
+
+	assertThat("albumen",
+	           both(containsString("a"))
+	             .and(containsString("b")));
+
+	assertThat(Arrays.asList("one", "two", "three"),
+	           hasItems("one", "three"));
+
+	assertThat(Arrays.asList("fun", "ban", "net"),
+	           everyItem(containsString("n")));
+
+!SLIDE
+	@@@ Java
+	import static org.hamcrest.CoreMatchers.*;
+
+	assertThat("good", allOf(equalTo("good"),
+	                         startsWith("good")));
+
+	assertThat("good", not(allOf(equalTo("bad"),
+	                             equalTo("good"))));
+
+	assertThat("good", anyOf(equalTo("bad"),
+	                         equalTo("good")));
+
+!SLIDE
+	@@@ Java
+	import org.hamcrest.core.CombinableMatcher;
+
+	assertThat(7, not(CombinableMatcher
+	                    .<Integer>either(equalTo(3))
+	                    .or(equalTo(4))));
+
+!SLIDE
 ## Custom Message
 	@@@ Java
-	assertEquals(expected, actual)
-	assertEquals(String message, expected, actual)
+	assertEquals(T expected, T actual)
+	assertEquals(String message, T expected, T actual)
