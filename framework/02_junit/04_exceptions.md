@@ -5,7 +5,7 @@
 
 !SLIDE
 	@@@ Java
-	@Test(expected = IndexOutOfBoundsException.class)
+	@Test(expected=IndexOutOfBoundsException.class)
 	public void empty() {
 	  new ArrayList<Object>().get(0);
 	}
