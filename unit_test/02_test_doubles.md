@@ -3,10 +3,53 @@
 ## network & database?
 
 !SLIDE
-# Collaborators
+	@@@ Java
+	public class Example {
+	  private DatabaseThingie myDatabase;
+
+	  public Example() {
+	    myDatabase = new DatabaseThingie();
+	  }
+
+	  public void doStuff() {
+	    myDatabase.getData();
+	    // ...
+	  }
+	}
+
+!SLIDE
+# SUT
+## &
+# collaborators
 
 !SLIDE
 # Isolation
+
+!SLIDE
+# Dependency Injection
+
+!SLIDE
+## Dependency injection means
+## giving an object
+## its instance variables.
+## Really. That's it.
+
+!SLIDE
+	@@@ Java
+	public class Example {
+	  private DatabaseThingie myDatabase;
+
+	  // public Example() {}
+
+	  public setDatabase(DatabaseThingie database) {
+	    myDatabase = database;
+	  }
+
+	  public void doStuff() {
+	    myDatabase.getData();
+	    // ...
+	  }
+	}
 
 !SLIDE
 # Test Double
@@ -65,3 +108,26 @@
 	  order.confirm();
 	  assertEquals(1, mailer.numberSent());
 	}
+
+!SLIDE
+	@@@ Java
+	public void itShouldDoXxxWhenSendingMailFailed() {
+	  Order order = new Order(...);
+	  MailServiceStub mailer = new MailServiceStub();
+	  order.setMailer(mailer);
+	  order.confirm(); // How to simulate failure
+	  // Verify do xxx
+	}
+
+!SLIDE
+	@@@ Java
+	public class MailServiceStub implements MailService {
+	  public void send(Message msg) {
+	    throw new MailDeliveryFailureException(...);
+	  }
+	}
+
+!SLIDE
+# Too many code
+# to setup
+# test doubles
