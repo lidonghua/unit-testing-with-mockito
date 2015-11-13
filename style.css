@@ -7,6 +7,9 @@ code {
   font-size: 28px;
   line-height: 40px;
 }
+.hljs-tag {
+  background: none;
+}
 pre {
   margin: 40px;
 }

@@ -123,7 +123,7 @@
 	@@@ Java
 	public class MailServiceStub implements MailService {
 	  public void send(Message msg) {
-	    throw new MailDeliveryFailureException(...);
+	    throw new MailDeliveryException(...);
 	  }
 	}
 
