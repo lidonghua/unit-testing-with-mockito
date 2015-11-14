@@ -25,5 +25,5 @@
 	  .thenReturn(new GregorianCalendar(2015, 0, 1));
 
 	assertEquals(
-	  new GregorianCalendar(2015, 0, 1).getTime(),
-	  calendar.current().getTime());
+	  new GregorianCalendar(2015, 0, 1),
+	  calendar.current());
