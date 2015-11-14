@@ -1,7 +1,7 @@
 !SLIDE
 # Mocking Static Methods
 	@@@ Java
-	class Constants {
+	public class Constants {
 	  public static double pi() {
 	    return 3.14;
 	  }

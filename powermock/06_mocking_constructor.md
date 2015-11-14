@@ -1,7 +1,7 @@
 !SLIDE
 ## Mocking Constructors
 	@@@ Java
-	class MyDate {
+	public class MyDate {
 	  public Date current() {
 	    return new Date();
 	  }

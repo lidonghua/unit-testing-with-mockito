@@ -8,7 +8,7 @@
 
 !SLIDE
 	@@@ Java
-	class MyCalendar {
+	public class MyCalendar {
 	  public Calendar current() {
 	    return Calendar.getInstance();
 	  }

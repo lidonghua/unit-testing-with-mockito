@@ -1,7 +1,7 @@
 !SLIDE
 ## Mocking Private Methods
 	@@@ Java
-	class FooClass {
+	public class FooClass {
 	  public String getPrivate() {
 	    return privateMethod();
 	  }
