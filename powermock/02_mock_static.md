@@ -1,4 +1,5 @@
 !SLIDE
+# Mocking Static Methods
 	@@@ Java
 	class Constants {
 	  public static double pi() {
@@ -76,7 +77,8 @@
 	Constants.pi();
 
 !SLIDE
-## Stub void static method to throw exception
+## Stub void static method
+## to throw exception
 	@@@ Java
 	// import static o.p.a.m.PowerMockito.doThrow;
 
