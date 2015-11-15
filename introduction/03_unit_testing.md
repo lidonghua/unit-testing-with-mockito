@@ -15,7 +15,7 @@
 ## of an application
 
 !SLIDE
-## Usually, a *method* (in practice)
+## Usually, a *class* (in practice)
 
 !SLIDE
 ## A single functional use case

@@ -24,3 +24,10 @@ a {
 a:hover {
   text-decoration: underline;
 }
+/* Fit menu item in one line */
+.fg-menu-indicator {
+  overflow: hidden;
+}
+.fg-menu-indicator > span.ui-icon {
+  display: none;
+}

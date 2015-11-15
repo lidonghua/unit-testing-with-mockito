@@ -3,8 +3,8 @@
 
 !SLIDE
 ## Inspired from JUnit & NUnit
-## but
-## More powerful & easier to use
+### but
+## more powerful & easier to use
 
 !SLIDE
 ## Maven

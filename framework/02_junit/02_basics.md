@@ -53,20 +53,18 @@
 	  Calculator calculator = new Calculator();
 	  int sum = calculator.evaluate("0");
 	  assertEquals(0, sum);
-	  calculator.close();
 	}
 
 	@Test public void addTwoNumbers() {
 	  Calculator calculator = new Calculator();
 	  int sum = calculator.evaluate("1+2");
 	  assertEquals(3, sum);
-	  calculator.close();
 	}
 
 !SLIDE
-## Set Up
-## and
-## Tear Down
+# Set Up
+## &
+# Tear Down
 
 !SLIDE
 	@@@ Java
@@ -84,7 +82,7 @@
 	  assertEquals(3, sum);
 	}
 	@After public void tearDown() {
-	  calculator.close();
+	  // calculator.close();
 	}
 
 !SLIDE

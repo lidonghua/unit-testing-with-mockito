@@ -26,10 +26,15 @@
 	}
 
 !SLIDE
+![Test Ignored](test-ignored.png)
+![Test Ignored Count](test-ignored-count.png)
+
+!SLIDE
 ## Be better with a message
 	@@@ Java
-	@Ignore("We don't need it now because...")
+	@Ignore("It seems to be a problematic test case.")
 	@Test
-	public void someTest() {
+	public void itShouldThrowNumberFormatExceptionWhenTheValuesAreInvalid() {
 	  // ...
 	}
+![Test Ignored Message](test-ignored-message.png)

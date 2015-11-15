@@ -50,9 +50,8 @@
 	assertArrayEquals(T[] expected, T[] actual,
 	                  T epsilon)
 
-!SLIDE
-	@@@ Java
-	fail()
+!SLIDE code
+### fail()
 
 !SLIDE
 	@@@ Java
