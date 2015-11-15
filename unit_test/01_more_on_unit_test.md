@@ -34,7 +34,7 @@ without VPN to your office
 ## A test is
 # NOT
 ## a unit test if:
-(by Michael Feathers)
+([by Michael Feathers](http://www.artima.com/weblogs/viewpost.jsp?thread=126923))
 
 !SLIDE
 ## It talks to the database
