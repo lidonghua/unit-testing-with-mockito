@@ -31,7 +31,7 @@
 	MyDate myDate = new MyDate();
 	// It's needed for verification
 	whenNew(Date.class).withNoArguments()
-	  .thenReturn(new Date());
+	  .thenReturn(null);
 
 	myDate.current();
 

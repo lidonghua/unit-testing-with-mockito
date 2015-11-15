@@ -18,21 +18,23 @@
 	}
 
 !SLIDE
-# SUT
-## &
-# collaborators
+## SUT & Collaborators
+![SUT and Collaborators](sut-and-collaborators.png)
 
 !SLIDE
-# Isolation
+## Isolation
+![Isolation](isolation.png)
 
 !SLIDE
-# Dependency Injection
+# Dependency
+# Injection
 
 !SLIDE
 ## Dependency injection means
 ## *giving an object*
 ## *its instance variables*.
 ## Really. That's it.
+### ([by James Shore](http://www.jamesshore.com/Blog/Dependency-Injection-Demystified.html))
 
 !SLIDE
 	@@@ Java

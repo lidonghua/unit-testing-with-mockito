@@ -16,6 +16,3 @@
 
 !SLIDE
 ## Usually, a *class* (in practice)
-
-!SLIDE
-## A single functional use case
