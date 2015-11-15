@@ -32,9 +32,9 @@
 	when(mock.someMethod(anyString()))
 	  .thenAnswer(new Answer() {
 	    Object answer(InvocationOnMock invocation) {
-	       Object[] args = invocation.getArguments();
-	       Object mock = invocation.getMock();
-	       return "called with arguments: " + args;
+	      Object[] args = invocation.getArguments();
+	      Object mock = invocation.getMock();
+	      return "called with arguments: " + args;
 	    }
 	  });
 

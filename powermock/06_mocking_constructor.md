@@ -29,8 +29,9 @@
 	// @PrepareForTest(MyDate.class)
 
 	MyDate myDate = new MyDate();
-	whenNew(Date.class).withNoArguments().thenReturn(
-	  new GregorianCalendar(2015, 0, 1).getTime());
+	// It's needed for verification
+	whenNew(Date.class).withNoArguments()
+	  .thenReturn(new Date());
 
 	myDate.current();
 

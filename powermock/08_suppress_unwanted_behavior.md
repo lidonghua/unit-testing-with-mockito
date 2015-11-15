@@ -17,21 +17,34 @@ e.g.
 ## Suppress own constructor
 	@@@ Java
 	ExampleWithEvilConstructor example =
-	  Whitebox.newInstance(ExampleWithEvilConstructor.class);
+	  Whitebox.newInstance(
+	    ExampleWithEvilConstructor.class);
 	example.doSomething();
 
 !SLIDE
 ## Suppress method
 	@@@ Java
+	public class ExampleWithEvilMethod {
+	  public ExampleWithEvilMethod() { init(); ... }
+	  private void init() { ... }
+	}
+
 	// @RunWith(PowerMockRunner.class)
 	// @PrepareForTest(ExampleWithEvilMethod.class)
 
 	suppress(method(ExampleWithEvilMethod.class, "init"));
-	ExampleWithEvilMethod example = new ExampleWithEvilMethod();
+	ExampleWithEvilMethod example =
+	  new ExampleWithEvilMethod();
 
 !SLIDE
 ## Suppress static initializer
 	@@@ Java
+	public class ExampleWithEvilStaticInitializer {
+	  static {
+	    ...
+	  }
+	}
+
 	// Don't use ExampleWithEvilStaticInitializer.class
 	@RunWith(PowerMockRunner.class)
 	@SuppressStaticInitializationFor(
@@ -40,8 +53,11 @@ e.g.
 !SLIDE
 ## Suppress fields
 	@@@ Java
+	// @RunWith(PowerMockRunner.class)
+	// @PrepareForTest(MyClass.class)
+
 	public class MyClass {
-    private MyObject myObject = new MyObject();
+	  private MyObject myObject = new MyObject();
 	}
 
 	suppress(field(MyClass.class, "myObject"));

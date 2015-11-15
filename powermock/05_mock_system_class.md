@@ -1,8 +1,14 @@
 !SLIDE
 ## Mocking System Class
+### e.g. `java.util.Calendar`
+
+!SLIDE
 ### It's impossible for PowerMock
 ### to prepare a system class
-### <del>`@PrepareForTest(java.util.Calendar.class)`</del>
+	@@@ Java
+	@PrepareForTest(Calendar.class) // It's not working
+
+!SLIDE
 ### Instead, you prepare
 ### *the class that use the system class*
 

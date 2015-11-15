@@ -1,5 +1,5 @@
 !SLIDE
-# Mocking Static Methods
+## Mocking Static Methods
 	@@@ Java
 	public class Constants {
 	  public static double pi() {
@@ -13,7 +13,7 @@
 !SLIDE
 ## Required annotations
 	@@@ Java
-	@RunWith(PowerMockRunner.class)
+	@RunWith(PowerMockRunner.class) // JUnit only
 	@PrepareForTest(Constants.class)
 	public class YourTestCase {
 	  // ...
@@ -82,8 +82,8 @@
 	@@@ Java
 	// import static o.p.a.m.PowerMockito.doThrow;
 
-	mockStatic(Constants.class);
-	doThrow(new RuntimeException()).when(Constants.class);
-	Constants.pi();
+	mockStatic(Example.class);
+	doThrow(new RuntimeException()).when(Example.class);
+	Example.methodReturningVoid();
 
-	Constants.pi();
+	Example.methodReturningVoid();

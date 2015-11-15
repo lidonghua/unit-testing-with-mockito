@@ -30,8 +30,8 @@
 
 !SLIDE
 ## Dependency injection means
-## giving an object
-## its instance variables.
+## *giving an object*
+## *its instance variables*.
 ## Really. That's it.
 
 !SLIDE
@@ -79,6 +79,7 @@
 
 !SLIDE
 	@@@ Java
+	@Test
 	public void itShouldSendMailAfterConfirmed() {
 	  Order order = new Order(...);
 	  MailService mailer = ???
@@ -101,6 +102,7 @@
 
 !SLIDE
 	@@@ Java
+	@Test
 	public void itShouldSendMailAfterConfirmed() {
 	  Order order = new Order(...);
 	  MailServiceStub mailer = new MailServiceStub();
@@ -111,6 +113,7 @@
 
 !SLIDE
 	@@@ Java
+	@Test
 	public void itShouldDoXxxWhenSendingMailFailed() {
 	  Order order = new Order(...);
 	  MailServiceStub mailer = new MailServiceStub();

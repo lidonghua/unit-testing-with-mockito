@@ -21,19 +21,21 @@
 	isNull/isNotNull(Class<T>)
 
 	any+Boolean/Byte/Char/Short/Int/Long/Float/Double()
-	any+Collection/List/Map/Set()
-	any+Collection/List/Map/Set+Of(Class<T>)
+	any+Collection/List/Set/Map()
+	any+Collection/List/Set+Of(Class<T>)
+	anyMapOf(Class<T>, Class<T>)
 
 !SLIDE
 ## A lot of matchers (2)
 	@@@ Java
-	anyString(),
+	anyString()
 	contains/startsWith/endsWith/matches(String)
 
 	eq(T)
 	eq(boolean/byte/char/short/int/long/float/double)
 
-	refEq(T, String...) // equals() not implemented
+ 	// When equals() not implemented
+	refEq(T, String... excludeFields)
 
 !SLIDE
 ## A lot of matchers (3)
@@ -84,7 +86,8 @@
 	  }
 	}
 
-	verify(mock).addAll(listOfTwoElements());
+	// import static CustomMatchers.listOfTwoElements;
+	verify(mock).addAll(argThat(listOfTwoElements()));
 
 !SLIDE
 ## Warning: if using matchers,

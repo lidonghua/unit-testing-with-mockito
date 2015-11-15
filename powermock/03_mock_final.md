@@ -15,7 +15,7 @@
 
 	FinalClass finale = mock(FinalClass.class);
 
-	doReturn("mock").when(finale).method();
+	when(finale.method()).thenReturn("mock");
 
 	assertEquals("mock", finale.method());
 

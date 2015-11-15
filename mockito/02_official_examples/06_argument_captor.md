@@ -1,8 +1,18 @@
 !SLIDE
-## Capturing arguments
-## for further assertions
 	@@@ Java
-	ArgumentCaptor<Person> argument =
-	  ArgumentCaptor.forClass(Person.class);
-	verify(mock).doSomething(argument.capture());
-	assertEquals("John", argument.getValue().getName());
+	public void confirm() {
+	  Message message = new Message();
+	  message.setText("confirmed");
+	  mailer.send(message);
+	}
+
+!SLIDE
+## Capturing arguments
+### for further assertions
+	@@@ Java
+	ArgumentCaptor<Message> argument =
+	  ArgumentCaptor.forClass(Message.class);
+
+	verify(mockMailer).send(argument.capture());
+
+	assertEquals("confirmed", argument.getValue().getText());

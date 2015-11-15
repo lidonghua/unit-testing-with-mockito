@@ -1,4 +1,25 @@
 !SLIDE
+## How to mock (stub)
+## *static*/*private* methods?
+
+!SLIDE
+# *NEVER*
+### for your own code
+
+!SLIDE
+### Avoid static methods in your class
+
+!SLIDE
+### Test private methods indirectly
+
+!SLIDE
+## But sometimes, you know,
+# I really need to...
+
+!SLIDE
+# ¯\\\_( ツ )\_/¯
+
+!SLIDE
 ![PowerMock Logo](powermock-logo.png)
 
 !SLIDE

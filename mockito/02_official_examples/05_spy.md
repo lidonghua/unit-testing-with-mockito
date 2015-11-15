@@ -33,8 +33,6 @@
 
 	doReturn("foo").when(spy).get(0);
 
-NOTE: Not working on *final* methods
-
 !SLIDE
 ## A copy is used when spying
 	@@@ Java
