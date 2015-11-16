@@ -5,7 +5,9 @@
     { "section": "framework" },
     { "section": "unit_test" },
     { "section": "mockito" },
-    { "section": "powermock" }
+    { "section": "powermock" },
+    { "section": "summary" },
+    { "section": "# Thank you!" }
   ],
   "highlight": "idea"
 }

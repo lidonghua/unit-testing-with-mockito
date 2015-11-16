@@ -35,3 +35,8 @@
 
 	  // Verify do xxx
 	}
+
+!SLIDE
+# Be Careful
+### Mocks can couple the test
+### to the implementation detail

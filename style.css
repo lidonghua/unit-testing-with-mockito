@@ -31,3 +31,7 @@ a:hover {
 .fg-menu-indicator > span.ui-icon {
   display: none;
 }
+.reversed {
+  background: black;
+  color: white;
+}

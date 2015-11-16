@@ -10,5 +10,3 @@
 	Flaw #2: Digging into Collaborators
 	Flaw #3: Brittle Global State & Singletons
 	Flaw #4: Class Does Too Much
-
-(by some Google guys)
